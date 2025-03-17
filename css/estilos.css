@@ -20,7 +20,7 @@ h1 {
 
 
 h3 {
-    background-color: #2B3D37;
+    background-color: #4D6D63;
     border-top-left-radius: 2px ;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
@@ -44,4 +44,5 @@ div {
                 padding-left: 30%;
                 border: solid 1px #56796E;
                 border-radius: 2px;
+                justify-content:;
 }
