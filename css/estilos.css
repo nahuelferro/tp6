@@ -31,12 +31,10 @@ h3 {
     width: 21%;
 }
 
-input:focus {
-                background-color: #4D6D63;
-                text-align:end;
-}
 
-div { 
+
+
+div{  
                 color:#839692 ;
                 background-color: #839692;
                 font-family: 'Roboto', sans-serif;
@@ -44,5 +42,6 @@ div {
                 padding-left: 30%;
                 border: solid 1px #56796E;
                 border-radius: 2px;
-                justify-content:;
+                padding-bottom: 5%;
+
 }

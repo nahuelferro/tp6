@@ -43,12 +43,12 @@
 
 
                 <h4>Nacionalidad:*</h4>
-                <label for="- seleccionar -"></label>
-                <select name="- seleccionar -" id="- seleccionar -" required>
-                    <option value="Argentina"></option>
-                    <option value="Brasileña"></option>
-                    <option value="Uruguaya"></option>
-                    <option value="Otra"></option>
+                <select name="seleccionar" required>
+                    <option value="seleccionar"> - Seleccionar - </option>
+                    <option value="Argentina"> Argentina </option>
+                    <option value="Brasileña"> Brasileña</option>
+                    <option value="Uruguaya"> Uruguaya</option>
+                    <option value="Otra"> Otra</option>
                 </select>
                 <br>
 
@@ -61,13 +61,15 @@
         
 
                 <h4>Sexo:*</h4>
-                <label for=""></label>
-                <select name="" id=""></select>
-                        <option value="Femenino"></option>
-                        <option value="Masculino"></option>
-                        <option value="Otro"></option>
-                </select>
-                <br>
+                    
+                                <input type="radio" id="Femenino" name="opciones" value="Femenino" required>
+                                <label for="Femenino">Femenino</label>
+
+                                <input type="radio" id="Masculino" name="opciones" value="Masculino" required>
+                                <label for="Masculino">Masculino</label>
+
+                                <input type="radio" id="Otro" name="opciones" value="Otro" required>
+                                <label for="Otro">Otro</label>
         </form>
 
 
