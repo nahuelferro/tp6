@@ -31,6 +31,14 @@ h3 {
     width: 21%;
 }
 
+input:focus {
+                background-color: #4D6D63;
+                text-align:end;
+}
+
+label :focus {
+    background-color: #4D6D63;
+}
 
 
 
