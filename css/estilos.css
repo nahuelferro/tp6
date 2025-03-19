@@ -32,25 +32,37 @@ legend {
     padding-top: 10px;
 }
 
+
 input:focus {
                 background-color: #4D6D63;
                 text-align:end;
 }
 
-label :focus {
-    background-color: #4D6D63;
+
+
+div {  
+    color:#839692 ;
+    background-color: #839692;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    padding-left: 30%;
+    border: solid 1px #56796E;
+    border-radius: 2px;
+    padding-bottom: 5%;
+
 }
 
+.dot-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding-top: 3%;
+}
 
-
-div{  
-                color:#839692 ;
-                background-color: #839692;
-                font-family: 'Roboto', sans-serif;
-                color: black;
-                padding-left: 30%;
-                border: solid 1px #56796E;
-                border-radius: 2px;
-                padding-bottom: 5%;
-
+.dot-container li {
+    width: 15px;
+    height: 15px;
+    background-color: #b0c4c4;
+    border-radius: 50%;
 }
