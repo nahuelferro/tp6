@@ -19,7 +19,7 @@ h1 {
 }
 
 
-h3 {
+legend {
     background-color: #4D6D63;
     border-top-left-radius: 2px ;
     border-top-right-radius: 2px;
@@ -28,7 +28,8 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: smaller;
     color: #EEEAE6;
-    width: 21%;
+    height: 2em;
+    padding-top: 10px;
 }
 
 input:focus {
