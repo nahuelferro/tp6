@@ -1,0 +1,30 @@
+const estilos = [
+    "estilo-base",
+    "estilo-retro",
+    "estilo-futuro"
+];
+let indiceEstilo = 0;
+
+window.onload = function () {
+    const btn = document.createElement("button");
+    btn.id = "cambiarEstilo";
+    btn.textContent = "Cambiar Estilo";
+    btn.style.position = "fixed";
+    btn.style.top = "10px";
+    btn.style.right = "10px";
+    btn.style.zIndex = "9999";
+    btn.className="btn";
+    
+    document.body.prepend(btn);
+
+    btn.addEventListener("click", () => {
+        // Desactivar todos
+        estilos.forEach(id => {
+            document.getElementById(id).disabled = true;
+        });
+
+        // Activar el siguiente
+        indiceEstilo = (indiceEstilo + 1) % estilos.length;
+        document.getElementById(estilos[indiceEstilo]).disabled = false;
+    });
+};

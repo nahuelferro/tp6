@@ -4,12 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Afiliación</title>
-        <!-- <link rel="stylesheet" href="css/estilos.css"> -->
-        <!-- <link rel="stylesheet" href="css/estilos-futuro.css"> -->
-        <link rel="stylesheet" href="css/estilos-retro.css">
+        <link id="estilo-base" rel="stylesheet" href="css/estilos.css">
+        <link id="estilo-retro" rel="stylesheet" href="css/estilos-retro.css" disabled>
+        <link id="estilo-futuro" rel="stylesheet" href="css/estilos-futuro.css" disabled>        
     </head>
-    <script src="/archivo.js"></script>
+    <script src="js/archivo.js"></script>
     <body>
+        <!-- Boton que permite cambiar los 3 estilos css -->
+        <!-- <button id="cambiarEstilo" class="btn" style="position: fixed; top: 10px; right: 10px; z-index: 999;">Cambiar Estilo</button> -->
+
         <form id="form">
             <h1>
                 Vení al Gym! 💪🏻
@@ -141,5 +144,7 @@
             </div>
 
         </form>
+
+        <script src="js/estilos-ciclo.js"></script>        
     </body>
 </html>
