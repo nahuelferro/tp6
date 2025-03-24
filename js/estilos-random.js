@@ -1,18 +1,11 @@
-const estilos = [
-    "estilo-base",
-    "estilo-retro",
-    "estilo-futuro",
-    "estilo-propio1"
-];
-
-let indiceEstilo = 0;
+// La variable estilos viene de estilos-ciclo.js
 
 window.addEventListener("load", () => {
     const btn = document.createElement("button");
-    btn.id = "cambiarEstilo";
-    btn.textContent = "Cambiar Estilo";
+    btn.id = "cambiarRandom";
+    btn.textContent = "Cambiar Random";
     btn.style.position = "fixed";
-    btn.style.top = "10px";
+    btn.style.top = "60px";
     btn.style.right = "10px";
     btn.style.width = "180px";
     btn.style.zIndex = "9999";
@@ -27,7 +20,8 @@ window.addEventListener("load", () => {
         });
 
         // Activar el siguiente
-        indiceEstilo = (indiceEstilo + 1) % estilos.length;
-        document.getElementById(estilos[indiceEstilo]).disabled = false;
+        let random = Math.floor(Math.random() * estilos.length);
+        console.log("aleatorio: "+random);
+        document.getElementById(estilos[random]).disabled = false;
     });
 });
