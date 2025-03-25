@@ -6,6 +6,13 @@ window.addEventListener("load", () => {
 
         const datos = JSON.parse(sessionStorage.getItem("usuarios")) || [];
 
+        // Validamos datos del Form
+        if (!form.condiciones.checked) {
+            alert("Debe aceptar las condiciones para avanzar!");
+            return;
+        }
+
+        // Creamos un objeto con los datos del formulario
         const nuevo = {
             id: datos.length > 0 ? datos[datos.length - 1].id + 1 : 1,
             nombre: form.nombre.value,
