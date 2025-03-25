@@ -2,7 +2,8 @@ const estilos = [
     "estilo-base",
     "estilo-retro",
     "estilo-futuro",
-    "estilo-propio1"
+    "estilo-propio1",
+    "estilo-propio2"
 ];
 
 let indice = 0;
